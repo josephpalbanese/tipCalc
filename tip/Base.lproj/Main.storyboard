@@ -1,25 +1,188 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PTMono.ttc">
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+            <string>PTMono-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="A2G-7T-7eh">
+                                <rect key="frame" x="0.0" y="56" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M1d-CQ-tEd">
+                                        <rect key="frame" x="12" y="18" width="48" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="82"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="lqz-6b-0Mi">
+                                        <rect key="frame" x="60" y="18" width="260" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="82"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gd4-Hx-oHg"/>
+                                            <action selector="inputStart:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="u1N-tS-cLs"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="6Wz-ZX-yeu">
+                                <rect key="frame" x="0.0" y="256" width="320" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0jg-fH-XzS">
+                                        <rect key="frame" x="63" y="5" width="42" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="16"/>
+                                        <color key="textColor" red="0.73725490196078436" green="0.72156862745098038" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="95u-AL-N1G">
+                                        <rect key="frame" x="193" y="36" width="89" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="G1n-WJ-nyp">
+                                        <rect key="frame" x="197" y="26" width="80" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="dwW-gU-dQu">
+                                        <rect key="frame" x="44" y="26" width="80" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cak-TM-n75">
+                                        <rect key="frame" x="38" y="36" width="92" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Db3-l1-78h">
+                                        <rect key="frame" x="202" y="5" width="71" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="16"/>
+                                        <color key="textColor" red="0.83137254901960778" green="1" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="dX6-Ss-yCe">
+                                <rect key="frame" x="0.0" y="422" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8B-3v-sih">
+                                        <rect key="frame" x="155" y="0.0" width="10" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PTMono-Regular" family="PT Mono" pointSize="16"/>
+                                        <color key="textColor" red="0.13725490196078433" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Tl7-oR-gdA">
+                                        <rect key="frame" x="120" y="28" width="80" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ysN-GF-mJ1">
+                                        <rect key="frame" x="24" y="54" width="272" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="18%"/>
+                                            <segment title="20%"/>
+                                            <segment title="22%"/>
+                                        </segments>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="nf7-UW-1Dt"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="V1b-Ib-tla">
+                                <rect key="frame" x="268" y="12" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nYZ-SN-BMY">
+                                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="lightThemeButton.png"/>
+                                        <connections>
+                                            <action selector="darkAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaA-rX-Lru"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AM5-fV-zyB">
+                                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="darkthemeButton.png"/>
+                                        <connections>
+                                            <action selector="lightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BY2-dc-Vg0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21568627450980393" alpha="1" colorSpace="deviceRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TTR-hT-YHr" appends="YES" id="OFv-fy-dNS"/>
+                        </connections>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="billField" destination="lqz-6b-0Mi" id="E9z-Bf-5kr"/>
+                        <outlet property="billVIew" destination="A2G-7T-7eh" id="TKw-u1-2ee"/>
+                        <outlet property="darkSwitch" destination="nYZ-SN-BMY" id="Gjx-5o-eJb"/>
+                        <outlet property="lightSwitch" destination="AM5-fV-zyB" id="zZG-QO-0xp"/>
+                        <outlet property="moneyLabel" destination="M1d-CQ-tEd" id="H9c-l5-AYd"/>
+                        <outlet property="tipControl" destination="ysN-GF-mJ1" id="KzF-ha-0yx"/>
+                        <outlet property="tipLabel" destination="cak-TM-n75" id="M9J-bh-w29"/>
+                        <outlet property="tipPercentageSeperator" destination="Tl7-oR-gdA" id="JHC-Jp-h2r"/>
+                        <outlet property="tipPercentageView" destination="dX6-Ss-yCe" id="Hnb-5u-fvZ"/>
+                        <outlet property="tipSeperator" destination="dwW-gU-dQu" id="j9G-uB-sWL"/>
+                        <outlet property="tipTitle" destination="K8B-3v-sih" id="xNR-dw-Nqf"/>
+                        <outlet property="tipTotalView" destination="6Wz-ZX-yeu" id="SIH-G0-KaP"/>
+                        <outlet property="totalLabel" destination="95u-AL-N1G" id="HNX-IX-5V4"/>
+                        <outlet property="totalSeperator" destination="G1n-WJ-nyp" id="wUq-W3-6Cb"/>
+                        <outlet property="totalTitle" destination="Db3-l1-78h" id="92x-fO-qs5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TTR-hT-YHr">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="DC4-1z-YPj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="237" y="449"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="darkthemeButton.png" width="24" height="24"/>
+        <image name="lightThemeButton.png" width="24" height="24"/>
+    </resources>
 </document>

@@ -14,6 +14,11 @@
 		E8C6EEFB1CD3D4C900A41589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C6EEF91CD3D4C900A41589 /* LaunchScreen.storyboard */; };
 		E8C6EF061CD3D4C900A41589 /* tipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C6EF051CD3D4C900A41589 /* tipTests.swift */; };
 		E8C6EF111CD3D4C900A41589 /* tipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C6EF101CD3D4C900A41589 /* tipUITests.swift */; };
+		E8ED25011CD82B3C00B09ED3 /* PTMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E8ED25001CD82B3C00B09ED3 /* PTMono.ttc */; };
+		E8ED25041CD83F9800B09ED3 /* darkthemeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8ED25021CD83F9800B09ED3 /* darkthemeButton@2x.png */; };
+		E8ED25051CD83F9800B09ED3 /* darkthemeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E8ED25031CD83F9800B09ED3 /* darkthemeButton.png */; };
+		E8ED25081CD848E700B09ED3 /* lightThemeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8ED25061CD848E700B09ED3 /* lightThemeButton@2x.png */; };
+		E8ED25091CD848E700B09ED3 /* lightThemeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E8ED25071CD848E700B09ED3 /* lightThemeButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		E8C6EF0C1CD3D4C900A41589 /* tipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C6EF101CD3D4C900A41589 /* tipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipUITests.swift; sourceTree = "<group>"; };
 		E8C6EF121CD3D4C900A41589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8ED25001CD82B3C00B09ED3 /* PTMono.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTMono.ttc; sourceTree = "<group>"; };
+		E8ED25021CD83F9800B09ED3 /* darkthemeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "darkthemeButton@2x.png"; sourceTree = "<group>"; };
+		E8ED25031CD83F9800B09ED3 /* darkthemeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkthemeButton.png; sourceTree = "<group>"; };
+		E8ED25061CD848E700B09ED3 /* lightThemeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lightThemeButton@2x.png"; sourceTree = "<group>"; };
+		E8ED25071CD848E700B09ED3 /* lightThemeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightThemeButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		E8C6EEE41CD3D4C900A41589 = {
 			isa = PBXGroup;
 			children = (
+				E8ED25001CD82B3C00B09ED3 /* PTMono.ttc */,
 				E8C6EEEF1CD3D4C900A41589 /* tip */,
 				E8C6EF041CD3D4C900A41589 /* tipTests */,
 				E8C6EF0F1CD3D4C900A41589 /* tipUITests */,
@@ -101,6 +112,10 @@
 				E8C6EEF21CD3D4C900A41589 /* ViewController.swift */,
 				E8C6EEF41CD3D4C900A41589 /* Main.storyboard */,
 				E8C6EEF71CD3D4C900A41589 /* Assets.xcassets */,
+				E8ED25061CD848E700B09ED3 /* lightThemeButton@2x.png */,
+				E8ED25071CD848E700B09ED3 /* lightThemeButton.png */,
+				E8ED25021CD83F9800B09ED3 /* darkthemeButton@2x.png */,
+				E8ED25031CD83F9800B09ED3 /* darkthemeButton.png */,
 				E8C6EEF91CD3D4C900A41589 /* LaunchScreen.storyboard */,
 				E8C6EEFC1CD3D4C900A41589 /* Info.plist */,
 			);
@@ -193,6 +208,7 @@
 				TargetAttributes = {
 					E8C6EEEC1CD3D4C900A41589 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 68J9ZAVZL2;
 					};
 					E8C6EF001CD3D4C900A41589 = {
 						CreatedOnToolsVersion = 7.3;
@@ -230,8 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C6EEFB1CD3D4C900A41589 /* LaunchScreen.storyboard in Resources */,
+				E8ED25081CD848E700B09ED3 /* lightThemeButton@2x.png in Resources */,
 				E8C6EEF81CD3D4C900A41589 /* Assets.xcassets in Resources */,
+				E8ED25011CD82B3C00B09ED3 /* PTMono.ttc in Resources */,
 				E8C6EEF61CD3D4C900A41589 /* Main.storyboard in Resources */,
+				E8ED25041CD83F9800B09ED3 /* darkthemeButton@2x.png in Resources */,
+				E8ED25091CD848E700B09ED3 /* lightThemeButton.png in Resources */,
+				E8ED25051CD83F9800B09ED3 /* darkthemeButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +420,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpa.tip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpa.tip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +511,7 @@
 				E8C6EF171CD3D4C900A41589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8C6EF181CD3D4C900A41589 /* Build configuration list for PBXNativeTarget "tipTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +520,7 @@
 				E8C6EF1A1CD3D4C900A41589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8C6EF1B1CD3D4C900A41589 /* Build configuration list for PBXNativeTarget "tipUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +529,7 @@
 				E8C6EF1D1CD3D4C900A41589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
